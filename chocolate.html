@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Galaxy</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+        <img class="header__logo" src="img/logo.png" alt="logo">
+        </a>
+    </header>
+
+    <nav class="nav">
+        <a class="nav__enlace nav__enlace--activo" href="index.html">Tienda</a>
+        <a class="nav__enlace" href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>Chocolate</h1>
+        <div class="pastel">
+            <img class="pastel__imagen" src="img/chocolate.png" alt="Iamgen del producto">
+            <div class="pastel__contenido">
+                      
+        <form class="formulario__pedido">
+            <fieldset>
+                <legend></legend>
+                <div class="contenedor-campos"> 
+                    
+                    <div class="campo">
+                        <label>Nombre</label>
+                        <input class="input-text" type="text" placeholder="Tu Nombre">
+                    </div>
+                    
+                    <div class="campo">
+                        <label>Teléfono</label>
+                        <input class="input-text" type="tel" placeholder="Teléfono">
+                    </div>
+
+                    <div class="campo">
+                        <label>Correo</label>
+                        <input class="input-text"  type="email" placeholder="Email">
+                    </div>
+                    <div class="campo">
+                        <label>Mensaje</label>
+                        <textarea class="input-text" ></textarea>
+                    </div>
+                </div>  
+                    <div class="alinear-derecha flex">
+                        
+                    </div>
+                  
+            </fieldset>
+        </form>
+        <form class="checkbox">
+            
+            <p>
+                Extras:<br>
+                
+                <input type="checkbox" name="cb-rosas" value="gusta"> Galletas $80.00<br>
+                <input type="checkbox" name="cb-betun" value="gusta"> Betún $20.00<br>
+                <input type="checkbox" name="cb-betun" value="gusta"> Chocolate $50.00
+        
+            </p>
+      
+      </form>
+
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option disabled selected>-- Seleccionar Tamaño --</option>
+                        <option>Chico $95.00</option>
+                        <option>Mediano $150.00</option>
+                        <option>Grande $380.00</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+                    <input class="formulario__submit" type="submit" value="Agregar al Carrito">
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">SERGIO ALTUZAR - Todos Los Derechos Reservados 2022</p>
+    </footer>
+</body>
+</html>
